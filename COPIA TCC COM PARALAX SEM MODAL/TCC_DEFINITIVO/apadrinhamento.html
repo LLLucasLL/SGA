@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Apadrinhamento</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.php">
+                <img src="images/logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="resgate.html">Notícias</a></li>
+            <li class="link"><a href="adocao.html">Adoção</a></li>
+            <li class="link"><a href="castracao.html">Castração</a></li>
+            <li class="link"><a href="doacao.html">Doação</a></li>
+            <li class="link"><a href="quem_somos.html">Quem Somos</a></li>
+        </ul>
+        <a class="btn" href="login.html">Login</a>
+    </nav>
+
+
+
+
+
+
+
+    <header class="container">
+        
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1>Apadrinhe</h1>
+            <p>
+                Estamos muito felizes de ter você aqui! Seu apoio é essencial para continuarmos resgatando, reabilitando e encontrando lares cheios de amor para esses patudinhos! </p>
+                <p>
+                    Apadrinhar é um ato de amor que transforma todas as vidas ao redor. Aqui você conhecerá a história de vida dos nossos resgatados que receberam tratamentos e cuidados no nosso hospital veterinário e agora aguardam pelo seu final feliz!
+            </p>
+        </div>
+        <div class="image">
+            <!--Criar uma div para o table e colocar uma altura e espaço para a imagem-->
+            <table width=500px height=200px alight="left">
+        <tr>
+            <td style="padding: none;"> <img src="images/pc10.jpg"></td>
+            <td style="padding: none;"> <img src="images/pca1.jpg"></td>
+            <td style="padding: none;"> <img src="images/pg13.jpg"></td>
+        </tr>
+        <tr>
+            <td > <img src="images/pg10.jpg"></td>
+            <td > <img src="images/pc11.png"></td>
+            <td > <img src="images/pca2.jpeg"></td>
+        </tr>
+        <tr>
+            <td > <img src="images/pca3.jpg"></td>
+            <td > <img src="images/pg11.jpg"></td>
+            <td > <img src="images/pc13.jpg"></td>
+        </tr>
+    </table>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li class="link" style="padding-left: 30%;"><a href="apacachorro.html">Cachorro</a></li>
+            <li class="link"><a href="apagato.html">Gato</a></li>
+            <li class="link"><a href="apacavalo.html">Cavalo</a></li>
+            <li class="link"><a href="apaave.html">Ave</a></li>
+            <li class="link"><a href="apacoelho.html">Coelho</a></li>
+            <li class="link"><a href="#">Animais diversos</a></li>
+            <div id="search-container"  >
+                <input type="text" id="search-box" placeholder="Digite aqui..." >
+                <div id="suggestions"></div>
+              </div>
+              
+              <script>
+                const searchBox = document.getElementById('search-box');
+                const suggestionsContainer = document.getElementById('suggestions');
+                
+                // Resultados pré-registrados (pode ser obtido de uma API)
+                const resultadosPreRegistrados = [
+                  {nome: "Resultado 1", url: "adocao.html"},
+                  {nome: "Resultado 2", url: "https://www.yahoo.com"},
+                  {nome: "Resultado 3", url: "https://www.bing.com"},
+                  {nome: "Resultado 4", url: "https://www.duckduckgo.com"},
+                  {nome: "Resultado 5", url: "https://www.ask.com"}
+                ];
+                
+                // Função para exibir sugestões
+                function showSuggestions() {
+                  const inputValue = searchBox.value.toLowerCase();
+                  const suggestions = resultadosPreRegistrados.filter(resultado => resultado.nome.toLowerCase().startsWith(inputValue));
+                  suggestionsContainer.innerHTML = '';
+                  suggestions.forEach(suggestion => {
+                    const suggestionElement = document.createElement('div');
+                    suggestionElement.classList.add('suggestion');
+                    suggestionElement.textContent = suggestion.nome;
+                    suggestionElement.addEventListener('click', () => {
+                      // Redireciona para a página do resultado
+                      window.open(suggestion.url, '_blank');
+                    });
+                    suggestionsContainer.appendChild(suggestionElement);
+                  });
+                  suggestionsContainer.style.display = suggestions.length ? 'block' : 'none';
+                }
+                
+                // Evento de digitação na caixa de pesquisa
+                searchBox.addEventListener('input', showSuggestions);
+              </script>
+               </ul>
+    </nav>
+    <section class="bloco">
+        <div class="pricing" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="card">
+            <div class="content">
+                <center><h3>Spike</h3></center>
+                <img src="images/spike.jpg">
+                <div class="space"></div>
+                <center>
+                <p>
+                    Macho
+                </p>
+                <p>
+                    Sem raça definida
+                </p>
+                <p>
+                    6 anos de idade
+                </p>
+                <p>
+                    Desde: 01/05/2020 no abrigo
+                </p>
+                </center>
+            </div>
+            <button class="btn">Apadrinhe</button>
+        </div>
+
+
+
+            <div class="card">
+                <div class="content">
+                    <center><h3>Kiki</h3></center>
+                    <img src="images/gatinho.jpg">
+                    <div class="space"></div>
+                    <center>
+                    <p>
+                        Fêmea
+                    </p>
+                    <p>
+                        Sem raça definida
+                    </p>
+                    <p>
+                        1 anos de idade
+                    </p>
+                    <p>
+                        Desde: 30/01/2024 no abrigo
+                    </p>
+                    </center>
+                </div>
+                <button class="btn">Apadrinhe</button>
+            </div>
+
+
+
+            <div class="card">
+                <div class="content">
+                    <center><h3>Afrodite</h3></center>
+                    <img src="images/1.png" >
+                    <div class="space"></div>
+                    <center>
+                    <p>
+                        Fêmea
+                    </p>
+                    <p>
+                        Sem raça definida
+                    </p>
+                    <p>
+                        1 anos de idade
+                    </p>
+                    <p>
+                        Desde: 01/04/2024 no abrigo
+                    </p>
+                    </center>
+                </div>
+                <button class="btn">Apadrinhe</button>
+            </div>
+ 
+
+
+                <div class="card">
+                    <div class="content">
+                        <center><h3>Bob</h3></center>
+                        <img src="images/2.png" >
+                        <div class="space"></div>
+                        <center>
+                        <p>
+                            Macho
+                        </p>
+                        <p>
+                            Buldogue
+                        </p>
+                        <p>
+                            3 anos de idade
+                        </p>
+                        <p>
+                            Desde: 16/06/2021 no abrigo
+                        </p>
+                        </center>
+                    </div>
+                    <button class="btn">Apadrinhe</button>
+                </div>
+    </section>
+
+
+
+
+
+    <footer class="rodape">
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <p>
+                S.G.A
+            </p>
+            <div class="socials">
+                <a href="https://www.facebook.com"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.instagram.com"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.twitter.com"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+ 
+        <div class="column">
+            <h4>Navegue</h4>
+            <a href="index.html">Home</a>
+            <a href="resgate.html">Resgate</a>
+            <a href="adocao.html">Adoção</a>
+            <a href="apadrinhamento.html">Apadrinhamento</a>
+            <a href="castracao.html">Castração</a>
+            <a href="doacao.html">Doação</a>
+            <a href="quem_somos.html">Quem Somos</a>
+        </div>
+        <div class="column">
+            <h4>Horário de Funcionamento:</h4>
+            <p>Seg. -> Sex. <br>
+                7:00 à 20:00</p>
+
+            <p>Sáb. -> Dom <br>
+            7:00 à 12:00</p>
+                
+        </div>
+        <div class="column">
+            <h4>Contatos</h4>
+            <p>(12)99565 - 0260<br>
+            (12)3526 - 8079</p>
+            <p>SGA@gmail.com</p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 Lucas Lima, Mota, João Pedro Jesus. Todos os direitos Reservados.
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="script01.js"></script>
+    
+</body>
+
+</html>

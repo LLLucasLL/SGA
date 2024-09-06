@@ -1,0 +1,268 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    /*Degrade de cores*/
+    /*background: linear-gradient(to right, #131314, #ff00cc);*/
+    background: linear-gradient(to right, #fbb22e, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.login-card {
+    width: 450px;
+    background: whitesmoke;
+    padding: 3rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /*O .50 mexe com a transparencia da cor*/
+    background: whitesmoke;
+    /*O transform mexeu com o quadrado para a direita*/
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.login-card-logo {
+    margin-bottom: -3rem;
+    margin-top: -3rem;
+}
+
+.login-card-logo img {
+    width: 180px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #4c2bdf;
+}
+
+.login-card a:hover {
+    text-decoration: none;
+}
+
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.login-card-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.login-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="number"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(204, 201, 201, 0.3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus {
+    background: white;
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #fbb22e;
+}
+
+.login-card-form .button {
+    background: #e8c484;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.login-card-form .button:hover {
+    background: #fbb22e;
+    cursor: pointer;
+}
+
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-card-social>div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.login-card-social a:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-card {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+
+.buttonsForm {
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #fbb22e;
+    width: 220px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fbb22e;
+    color: #000000;
+    border-radius: 25px;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*.btnColor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #fbb22e, #e8c484);
+    border-radius: 30px;
+    transition: .3s;
+  }
+  .btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent ;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color:#000000;
+    border-radius: 25px;
+    border-color: #ffffff;
+    }
+ 

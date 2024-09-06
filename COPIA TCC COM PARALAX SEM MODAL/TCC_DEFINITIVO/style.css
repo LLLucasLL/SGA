@@ -1,0 +1,1392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /*background-color: #fbb22e;
+    /*background-color: #fdc747 #fbb226e0 #DEDFDC;*/
+    background: linear-gradient(to bottom, #f3c22b, #F29F05);
+
+}
+
+.space{
+    padding-top: 1rem;
+}
+
+
+label{
+    color: white;
+    padding-top: 30px;
+}
+
+input{
+    text-align: center;
+    padding-left: 5px; 
+    /*width: 200px;*/
+    width: 100px;
+    margin-left: 10px;
+}
+
+
+nav{
+    /*DEIXAR A IMAGEM GRANDE PARA NÃO PERDER O FOCO*/
+    max-width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    /*COMANDO PARA IGUALAR A LOGO COM A ESCRITA*/
+    align-items: center;
+    justify-content: space-between;
+    /**/
+    gap: 2rem;
+    background-color: #161515;
+}
+/*DEIXAR A LOGO NO TAMANHO QUE EU QUISER*/
+.nav-logo{
+    max-width: 100px;
+}
+/**/
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+/*ANIMAÇÃO NO BOTAO DA MINI BARA AZUL NO HEADER*/
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+/**/
+/*OUTRA ANIMAÇÃO*/
+.btn{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: transparent ;
+        border-radius: 15px;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+.btn:hover{
+    background-color: #fff;
+    color:#000000;
+    border-radius: 25px;
+    border-color: #ffffff;
+}
+/**/    
+.box .btn{
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box .btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+
+
+fieldset {
+    margin: auto;
+}
+
+
+input.form-input {
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000000;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+}
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+/*.bloco{
+    width: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.bloco h1{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}*/
+
+.bloco{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bloco:nth-of-type(1){
+    background-image: url(images/fun_cachorro.jpg);
+    
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #d79700;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h2{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+/*FEZ A PALVRA FICAR TRANSPARENTE E COM BORDA BRANCA*/
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+/**/
+header .content p{
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+
+header .titulo_u{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .titulo_u span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*POSIÇÃO DA IMAGEM PARA SER RESPONSIVO*/
+header .image{
+    position: relative;
+}
+/**/
+/*deU O EFEITO DO CIRCULO POR TRAS DA IMAGEM*/
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.2;
+    z-index: -100;
+}
+/**/
+header .image img{
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/*ranking*/
+.box{
+    background-color: #69503c;
+    ;
+    padding: 35px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.box a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+    border: 2px solid rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+/*FAZ OS  CONTAINERS*/
+.features{
+    margin-top: 4rem;
+    display: grid;
+    /*fez eles ficarem um do lado do outro*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+/**/
+/*COMANDO QUE QUANDO PASSAR O MOUSE EM CIMA A BORDA VIRFA BRANCA E O BACKGROUND DO CONTEINER MUDA DE COR*/
+.features .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border:2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+/**/
+
+/*Mexeu no icone que está azul*/
+.features .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+/**/
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.features .card a{
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: #1e40af;
+}
+
+/*o texto foi centralizado pelo text-align  dentro do 6oopx e o  margin colocou o texto no meio de acordo com o espaço que tinha além  */
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #000000;
+}
+/**/
+
+/**/
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    /*DICA:A recomendação para utilização do CSS "GRID" é para ser aplicado quando formos utilizar elementos em duas dimensões (ex. linhas e colunas), como o layout de uma página. Já o "FLEXBOX" é mais recomendado para ser utilizado quando formos trabalhar em apenas uma dimensão, seja ela tanto vertical quanto horizontal.*/
+    
+    grid-template-columns: repeat(3 , 1fr);
+    /*DICA:Pega tudo aquilo que está dentro do PRICING(e que já foi transformado em grid) e decide tudo as posições deles no repeat (x , yfr): "x" a quntidade na linha e "y" a quantidade de linha.*/
+    
+    gap: 2rem;
+    /*DICA:É o espaçamento , que pode ser dado netre as linhas ou nas bordas.*/
+}
+
+/*.pricing .card .adocao {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    background-image: url("images/cachorro3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: #323232;
+    /*background-size: contain;
+}*/
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #69503c;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: #323232;
+    /*background-size: contain;*/
+}
+
+
+    /*   padding: 0.25rem 0rem 0rem 0rem;      isso coloca um zoom no card*/
+.pricing .card:hover{
+    background-color: #ab9680;
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    /*DICA: o flex 1 fez com que os button ficasse na mesma linha.*/
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    color: #000000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pricing .card1{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: #323232;
+    /*background-size: contain;*/
+}
+
+
+
+.pricing .card1:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .card1 .content{
+    /*DICA: o flex 1 fez com que os button ficasse na mesma linha.*/
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card1 h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card1 h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card1 p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card1 p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card1 button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card1 button:hover{
+    color: #000000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape{
+    background-color: /*#7b5f4eb5*/#000000;
+    max-width: 100%;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3 , 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer p{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ffffff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #F29F05;
+    background-color: #886f5d;
+    border-color: #f0f0f0;
+    
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #F29F05;
+}
+
+.copyright{
+    background-color: #000000;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+/*Para deixar o site responsivo*/
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+}
+
+
+    main{
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #slider{
+        width: 100%;
+        height: 100vw;/**/
+        max-height: 650px;   
+        position: relative;
+    }
+    #slider img{
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+    
+        transition: opacity 800ms;
+    }
+    #slider img.selected{
+        opacity: 1;
+    }
+
+    /*header .fundo{
+        background-color: #9E7054;
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #search-container {
+        position: relative;
+        width: 500px;
+      }
+    
+      #search-box {
+        width: 100%;
+        margin-left: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+      
+      #suggestions {
+        position: absolute;
+        display: inline-table;
+        top: 100%;
+        left: 0;
+        width: calc(100% - 2px);
+        margin-top: 1px;
+        margin-left: 20.5%;
+        border: 1px solid #ccc;
+        border-top: none;
+        display: none;
+        background-color: #fff;
+      }
+      
+      .suggestion {
+        padding: 5px;
+        cursor: pointer;
+      }
+      
+      .suggestion:hover {
+        background-color: #f0f0f0;
+      }
+
+
+
+
+
+
+
+   /*   .faleconosco{
+        background-color: transparent;
+        width: 60%;
+        position: center;
+      }*/
+
+.login-card{
+    width: 60%;
+    background: rgba(181, 181, 181, 0.62);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+}
+
+.login-card-header{
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.login-card-header h1 + div{
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item{
+    position: relative;
+}
+
+.login-card-form .form-item label{
+    color:#fff;
+    font-size: 1.35rem;
+}
+
+.login-card-form .form-item .form-item-icon{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+
+.login-card input[type="text"],
+.login-card input[type="email"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus{
+    background: white;
+}
+
+.login-card-form .button{
+    background-color: transparent;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+
+    border: 2px solid #fff;
+}
+
+.login-card-form .button:hover{
+    color: #000000;
+    background-color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+
+
+.agrup {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens dentro da div */
+}
+
+.agrup label{
+width: 100px; /* Largura fixa para os rótulos */
+text-align: left;
+margin-right: 10px; /* Espaço entre o rótulo e o campo de entrada */
+}
+
+/*.agrup input[type="text"] se eu quiser expecificar qual tipo de input mudar*/
+.agrup input{
+width: 200px; /* Largura fixa para os campos de entrada */
+}
+
+.agrup span {
+width: 200px; /* Largura fixa para o conteúdo */
+display: inline-block; /* Garante que o conteúdo ocupe o espaço definido */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.painel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-painel {
+    position: relative;
+    margin: 24px;
+    width: 280px;
+    background-color: #fff;
+    padding: 30px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform linear 0.4s, color linear 0.4s;
+}
+
+.item-painel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,
+    #e9413c, #ffce2c);
+    opacity: 0;
+    transition: opacity linear 0.4s;
+}
+
+.item-painel:hover::before {
+    opacity: 1;
+}
+
+.img-painel {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-painel img {
+    width: 60%;
+}
+
+.nome {
+    position: relative;
+    color: #e9413c;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.info {
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.type {
+    position: center;
+    color: #e9413c;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-top: 24px;
+    border-top: 1px solid #bbb;
+}
+
+.action {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #e9413c;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    width: 80%;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.4s;
+}
+
+/* Card Hover */
+
+.item-container:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.item-container:hover .price,
+.item-container:hover .type {
+    color: #fff;
+    border-color: #fff;
+}
+
+.item-painel:hover .action {
+    background-color: #fff;
+    color: #e9413c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-frame {
+    position: relative;
+    margin: 24px;
+    width: 320px;
+    height: 570px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.img-frame,
+.body-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-frame img {
+    width: 100%;
+}
+
+.body-frame {
+    position: relative;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(24, 83, 122, 0.6);
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-frame:hover .overlay {
+    opacity: 1;
+    height: 150px;
+}
+/*Parei aqui*/
+.event-info {
+    background: linear-gradient(to bottom, #fff, #d1d0d0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.title,
+.desc {
+    text-align: center;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;
+}
+
+.informacao {
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.separator {
+    width: 20%;
+    height: 6px;
+    background-color:#43b5ff;
+    margin-bottom: 16px;
+}
+
+.additional-info {
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+
+.additional-info .info {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.informacao i {
+    color: #18537a;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+
+.informacao span {
+    color: #18537a;
+    font-weight: bolder;
+}
+
+.frame_action {
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+
+.item-frame:hover .frame_action {
+    top: 50px;
+}
+
+.frame_action:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+.foto-card {
+    position: relative;
+    width: 420px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin:  56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.foto-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.palavra {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name-proprietario {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+
+
+
+#open-modal {
+    background-color: #007bff;
+  }
+  
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .modal-body p {
+    margin-bottom: 1rem;
+  }
+  
+  #modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal.hide {
+    top: 0;
+  }
+  
+  
+  
+  
+  .img-modal {
+      display: flex;
+      /*justify-content: space-between; */
+      margin-bottom: 20px;
+    }
+    
+    .img-modal img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .modal_content {
+      margin-left: 20px; /* Adiciona espaço à esquerda do texto */
+    }
+    
+    .modal_content p {
+      margin: 0;
+    }
+  
