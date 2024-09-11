@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="teste.css">
+    <script src="janela.js" defer></script>
     <title>S.G.A</title>
 </head>
 
@@ -61,13 +62,12 @@
                 <div class="content">
                     <center>
                         <h3>Adoção</h3>
-                    </center>
                     <br>
                     <br>
                     <br>
                     <br>
                 </div>
-                <button class="btn">Assine agora</button>
+                <a class="btn" href="adocao.html">Saiba Mais</a>
             </div>
 
 
@@ -77,17 +77,17 @@
 
 
 
-            <div class="card" style="background-image: url('images/cachorro1.jpeg');">
+            <div class="card" style="background-image: url('images/salvamento.jpg');">
                 <div class="content">
                     <center>
-                        <h3>Apadrinhe</h3>
+                        <h3>Notícias</h3>
                     </center>
                     <br>
                     <br>
                     <br>
                     <br>
                 </div>
-                <button class="btn">Assine agora</button>
+                <a class="btn" href="resgate.html">Saiba Mais</a>
             </div>
 
 
@@ -103,7 +103,7 @@
                     <br>
                     <br>
                 </div>
-                <button class="btn">Assine agora</button>
+                <a class="btn" href="doacao.html">Saiba Mais</a>
             </div>
 
     </section>
@@ -260,7 +260,7 @@
                     <img src="./images/seringa.png" alt="Hobby image">
                 </div>
                 <p class="nome">250R$</p>
-                <p class="info">por Mês</p>
+
 
                 <p class="type">Plano Atendimento Externo</p>
                 <p class="info">Consultas</p>
@@ -268,26 +268,30 @@
                 <p class="info">Acompanhamento de Tutores</p>
                 <p class="info">Ração</p>
 
-                <button class="action">Assine o Plano</button>
+                <button class="action" id="open-modal">Assine o Plano</button>
             </div>
+
+
+
 
             <div class="item-painel">
                 <div class="img-painel">
                     <img src="./images/coracao.png" alt="Business image">
                 </div>
                 <p class="nome">200R$</p>
-                <p class="info">por Mês</p>
+
 
                 <p class="type">Plano Saúde</p>
                 <p class="info">Desinfecção das baias</p>
                 <p class="info">Ajuda financeira para internação</p>
                 <p class="info">Ajuda financeira para cuidado</p>
                 <p class="info">Ajuda financeira para tratamento</p>
+                <p></p>
+                <br>
+                <br>
 
-                <button class="action">Assine o Plano</button>
+                <button class="action" id="open-modal">Assine o Plano</button>
             </div>
-
-
 
 
             <div class="item-painel">
@@ -295,17 +299,53 @@
                     <img src="./images/hospital.png" alt="Basic image">
                 </div>
                 <p class="nome">135R$</p>
-                <p class="info">por Mês</p>
 
                 <p class="type">Plano Preventivo</p>
                 <p class="info">Vacina para imunização dos animais</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
 
-                <button class="action">Assine o Plano</button>
+                <button class="action" id="open-modal">Assine o Plano</button>
             </div>
 
 
 
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="modal-header">
+
+                    <button id="close-modal">Fechar</button>
+                </div>
+                <section>
+                    <div class="img-container">
+                        <img src="images/QR.png" alt="Image">
+
+
+                    </div>
+                    <center>
+                        <p>Lucas</p>
+                        <p>PIX:</p>
+                        <p>(12) 98173-5603</p>
+                    </center>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
     </section>
 
 

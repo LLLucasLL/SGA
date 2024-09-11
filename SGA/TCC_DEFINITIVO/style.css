@@ -92,7 +92,7 @@ nav{
 }
 /**/
 /*OUTRA ANIMAÇÃO*/
-.btn{
+.btn {
         padding: 1rem 2rem;
         font-size: 1rem;
         color: #fff;
@@ -101,14 +101,17 @@ nav{
         border: 2px solid #fff;
         cursor: pointer;
         transition: all 0.3s ease;
+        text-align: center ;
     }
 
-.btn:hover{
+.btn:hover {
     background-color: #fff;
     color:#000000;
     border-radius: 25px;
     border-color: #ffffff;
 }
+
+
 /**/    
 .box .btn{
     padding: 1rem;
