@@ -120,6 +120,55 @@ if (!isset($_SESSION["USU_CPF"])) {
         </div>
     </header>
 
+<!--    <section class="bloco" style="background-color: transparent;">
+
+            <!--<h1>Fale Conosco</h1>
+            <div class="space"></div>
+            <div class="space"></div>-->
+
+          <!--  <center>
+                <div class="login-card-container">
+                    <div class="login-card" style="background-color: transparent; border: 3px solid #fff;">
+
+                        <div class="login-card-header">
+                            <h1>Fale Conosco</h1>
+                        </div>
+ <!-- mexer aqui-->      <!--<form class="login-card-form" action="cadastroE.php" method="post">
+                            <div class="form-item">
+                                <label>Nome Completo:</label>
+                                <input type="text" name="nome" id="nome" 
+                                autofocus required>
+                                <label>Email:</label>
+                                <input type="email" name="email" id="email" 
+                                autofocus required>
+                                <br>
+                                <br>
+                                <label>Assunto:</label>
+                                <select name="profissao" id="profissao">
+                                    <option selected disabled value="" >Selecione...</option>
+                                    <option>Agradecimento</option>
+                                    <option>Reclamação</option>
+                                    <option>Quero me tornar parceiro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-item">
+                                <label>Escreva sua mensagem?</label>
+                                <textarea rows="6" style="width: 100%;" id="descricao" name="descricao"></textarea>
+                                <br>
+                                </div>
+      
+            
+                                <center>
+                            <input class="button" type="submit" value="Enviar"></input>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+
+        </center>
+</section>-->
+
 </body>
 
 </html>
