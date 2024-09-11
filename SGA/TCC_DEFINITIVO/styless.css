@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -212,4 +214,23 @@ footer .column > a:hover{
 
     gap: 5rem;
     /*DICA:É o espaçamento , que pode ser dado netre as linhas ou nas bordas.*/
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent ;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center ;
+}
+
+.btn:hover {
+background-color: #fff;
+color:#000000;
+border-radius: 25px;
+border-color: #ffffff;
 }
