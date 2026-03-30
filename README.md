@@ -1,13 +1,13 @@
-# 🛠️ W.S.M.---Repository
+# 🎯 S.G.A.---Repository
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yMotaz/W.S.M.---Repository-/blob/main/images/logo%20principal_branca%20(2).png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/yMotaz/W.S.M.---Repository-/blob/main/images/logo%20principal_Preto%20(1).png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/LLLucasLL/SGA/SGA/TCC_DEFINITIVO/images/Spindola.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/LLLucasLL/SGA/SGA/TCC_DEFINITIVO/images/logo.png">
   <img alt="Logo do projeto" src="logo_preta.png" width="300px">
 </picture>
 
 ## 🎯 Tema do Semestre
-*Weather Storage Managment*
+*Sistema de gerenciamento de Animais*
 
 <div align="left">
 <img src="https://github.com/WSM2025/W.S.M.---Repository/blob/main/images/svfac.png" width="200px"/>
