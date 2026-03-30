@@ -1,9 +1,9 @@
 # 🎯 S.G.A.---Repository
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/LLLucasLL/SGA/TCC_DEFINITIVO/images/logo 1.png"
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/LLLucasLL/SGA/TCC_DEFINITIVO/images/logo.png">
-  <img alt="Logo do projeto" src="logo 1.png" width="300px">
+  <source media="(prefers-color-scheme: dark)" srcset="TCC_DEFINITIVO/images/logo%201.png">
+  <source media="(prefers-color-scheme: light)" srcset="TCC_DEFINITIVO/images/logo.png">
+  <img alt="Logo do projeto" src="TCC_DEFINITIVO/images/logo.png" width="300">
 </picture>
 
 ## 🎯 Tema do Semestre
