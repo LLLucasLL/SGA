@@ -1,0 +1,324 @@
+﻿CREATE DATABASE SGA;
+
+CREATE TABLE USUARIO
+(
+    USU_CPF INT PRIMARY KEY NOT NULL,
+    USU_EMAIL VARCHAR(80) NOT NULL,
+    USU_USERNAME VARCHAR(100) NOT NULL,
+    USU_NOME VARCHAR(100) NOT NULL,
+    USU_SENHA VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE ADM
+(
+    ADM_CPF INT PRIMARY KEY NOT NULL,
+    ADM_EMAIL VARCHAR(80) NOT NULL,
+    ADM_SENHA VARCHAR(25) NOT NULL,
+    ADM_NIVEL INT NOT NULL
+);
+
+CREATE TABLE animais (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    sexo VARCHAR(20) NOT NULL, 
+    descricao TEXT NOT NULL,
+    foto VARCHAR(255),  -- Caminho da imagem do animal
+    tipo_animal VARCHAR(50) NOT NULL,  -- Coluna para armazenar o tipo de animal (Cachorro, Gato, Cavalo, etc.)
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ong VARCHAR(80) NOT NULL DEFAULT 'Sem ONG'
+);
+
+CREATE TABLE feedback(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    FED_NOME VARCHAR(255) NOT NULL,
+    FED_EMAIL VARCHAR(80) NOT NULL,
+    FED_ASSUNTO VARCHAR(80) NOT NULL,
+    FED_DESCRICAO TEXT NOT NULL,
+    FED_DATA TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE formulario(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    AA_CPF INT NOT NULL,
+    AA_EMAIL VARCHAR(80) NOT NULL,
+    AA_NOME VARCHAR(255) NOT NULL,
+    AA_TELEFONE VARCHAR(80) NOT NULL,
+    AA_ID_ANIMAL INT NOT NULL,
+    AA_ACAO VARCHAR(80) NOT NULL,
+    AA_DATA TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+INSERT INTO USUARIO VALUES
+(123,'KAKA@GMAIL.COM', 'RIBEIRO', 'KAKA','111'),
+(456,'LUIZ@GMAIL.COM', 'ANDRADE', 'LUIZ','222'),
+(789,'LAURA@GMAIL.COM', 'MATOS', 'LAURA','333');
+
+INSERT INTO ADM VALUES
+(123,'LUCAS@GMAIL.COM','100','1'),
+(456,'JOAO@GMAIL.COM','101','1'),
+(789,'LAURA@GMAIL.COM','102','1');
+
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">phone_in_talk</span>
+                    <input type="tel" placeholder="Telefone" name="telefone" id="telefone" required>
+                </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Formulário</h1>
+                <div>Preencha para que possamos entrar em contato com você</div>
+            </div>
+
+
+
+
+            <form class="login-card-form" action="cad_usuario.php" method="post">
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">description</span>
+                    <input type="number" placeholder="CPF" name="cpf" id="cpf" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">Mail</span>
+                    <input type="email" placeholder="E-mail" name="email" id="email" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">person</span>
+                    <input type="text" placeholder="Nome Completo" name="nome" id="nome" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">lock</span>
+                    <input type="tel" placeholder="Telefone" name="telefone" id="telefone" required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">account_circle</span>
+                    <input type="text" placeholder="ID do animal" name="animal" id="animal" autofocus required>
+                </div>
+
+
+
+                <input class="button" type="submit" value="Cadastrar"></input>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Delete</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>S.G.A</span></div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="pagina_protegida.php"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="analcy.html"><i class='bx bx-analyse'></i>Análises</a></li>
+            <li><a href="U_create.php"><i class='bx bx-group'></i>Create</a></li>
+            <li><a href="U_read.php"><i class='bx bx-spreadsheet'></i>Read</a></li>
+            <li><a href="U_update.php"><i class='bx bxs-user-detail'></i>Update</a></li>
+            <li class="active"><a href="U_delete.php"><i class='bx bx-x-circle'></i>Delete</a></li>
+            <li><a href="U_list.php"><i class='bx bx-receipt'></i>List</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="logout.php" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/logo.png">
+            </a>
+        </nav>
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Delete</h1>
+                </div>
+            </div>
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <table>
+                        <tbody>
+                            <center>
+                                <div class="chartt">
+                                    <div class="box">
+                                        <center>
+                                            <fieldset>
+                                                <h2>Deletar</h2>
+                                                <?php
+                                                require_once("conexao.php");
+
+                                                if (!isset($_POST["txtCPF"])) {
+                                                ?>
+                                                    <form name="frmExcluir" method="POST" action="U_delete.php">
+                                                        <br>
+                                                        <br>
+                                                        <label>CPF do Usuário:</label>
+                                                        <br>
+                                                        <br>
+                                                        <input type="text" name="txtCPF" size="20" required>
+                                                        <br>
+                                                        <br>
+                                                        <div class="btnfor">
+                                                            <input type="submit" value="Excluir" name="excluir">
+                                                        </div>
+                                                    </form>
+                                                <?php
+                                                } else {
+                                                    $CPF = mysqli_real_escape_string($conexao, $_POST["txtCPF"]);
+                                                    $sql1 = "SELECT * FROM usuario WHERE USU_CPF='$CPF'";
+                                                    $res = mysqli_query($conexao, $sql1);
+
+                                                    if (mysqli_num_rows($res) == 0) {
+                                                        echo "<br>";
+                                                        echo "<p align='center' style='color:black;'>Usuário não encontrado!</p>";
+                                                        echo "<br>";
+                                                    } else {
+                                                        $registro = mysqli_fetch_row($res);
+                                                        echo "<br>";
+                                                        echo "<p align='center' style='color:black;'>Usuário encontrado!</p>";
+                                                        echo "<br>";
+                                                        $NOME = $registro[3];
+
+                                                        ?>
+                                                        <form method="POST" action="U_delete.php">
+                                                            <p>CPF:<br> <b><?php echo $CPF; ?></b></p>
+                                                            <br>
+                                                            <br>
+                                                            <p>Nome: <span><?php echo $NOME; ?></span></p>
+                                                            <input type="hidden" name="txtCPF" value="<?php echo $CPF; ?>">
+                                                            <input type="hidden" name="confirmar" value="1">
+                                                            <div class="btnfor">
+                                                                <input type="submit" value="Confirmar exclusão do Usuário" name="excluir">
+                                                            </div>
+                                                        </form>
+                                                        <?php
+                                                    }
+                                                }
+
+                                                if (isset($_POST["confirmar"])) {
+                                                    $CPF = mysqli_real_escape_string($conexao, $_POST["txtCPF"]);
+                                                    $sql = "DELETE FROM usuario WHERE USU_CPF='$CPF'";
+                                                    $res2 = mysqli_query($conexao, $sql);
+                                                    if (mysqli_affected_rows($conexao) == 1) {
+                                                        echo "<p align='center' style='color:black;'>Usuário excluído com sucesso!</p>";
+                                                    } else {
+                                                        echo "<p align='center' style='color:black;'>Erro ao excluir: " . mysqli_error($conexao) . "</p>";
+                                                    }
+                                                }
+
+                                                mysqli_close($conexao);
+                                                ?>
+                                            </fieldset>
+                                        </center>
+                                    </div>
+                                </div>
+                            </center>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
