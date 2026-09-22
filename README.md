@@ -192,9 +192,8 @@ Projeto em desenvolvimento com base funcional para demonstração, estudo e evol
 ## 👥 Equipe
 
 - Lucas Lica — Scrum Master / Desenvolvimento
-- Giovana Levindo — Product Owner
+- João Pedro Jesus - Desenvolvimento / Product Owner
 - João Vitor Mota — Desenvolvimento
-- João Vitor Alvarenga — Desenvolvimento
 
 ---
 
