@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Formulário</h1>
+                <div>Preencha para que possamos entrar em contato com você</div>
+            </div>
+
+
+
+
+            <form class="login-card-form" action="formulario.php" method="post">
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">description</span>
+                    <input type="number" placeholder="CPF" name="cpf" id="cpf" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">Mail</span>
+                    <input type="email" placeholder="E-mail" name="email" id="email" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">person</span>
+                    <input type="text" placeholder="Nome Completo" name="nome" id="nome" autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">phone_in_talk</span>
+                    <input type="tel" placeholder="(xx) xxxxx-xxxx" name="telefone" id="telefone" required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">pets
+                    </span>
+                    <input type="text" placeholder="ID do animal" name="animal" id="animal" autofocus required>
+                </div>
+
+                <label for="tipo">Ato de:</label>
+                <select name="acao" id="animais">
+                    <option selected disabled value="">Selecione...</option>
+                    <option value="Adocao">Adoção</option>
+                    <option value="Apadrinhamento">Apadrinhamento</option>
+                </select>
+
+                <input class="button" type="submit" value="Enviar"></input>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
